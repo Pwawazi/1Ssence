@@ -176,7 +176,8 @@ h1, h2, h3, h4, h5, h6 {
 # Header
 --------------------------------------------------------------*/
 #header {
-  background: rgba(12, 11, 9, 0.6);
+  /* background: rgba(12, 11, 9, 0.6); */
+  background: rgba(12, 11, 9, 0.8);
   border-bottom: 1px solid rgba(12, 11, 9, 0.6);
   transition: all 0.5s;
   z-index: 997;
@@ -206,7 +207,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #header .logo img {
-  max-height: 40px;
+  max-height: 100px;
 }
 
 /*--------------------------------------------------------------
@@ -940,7 +941,7 @@ section {
   position: relative;
 }
 
-.menu .menu-content::after {
+/* .menu .menu-content::after {
   content: "......................................................................"
  "...................................................................."
  "....................................................................";
@@ -951,7 +952,7 @@ section {
   z-index: 1;
   color: #bab3a6;
   font-family: 'Red Hat Display', serif;
-}
+} */
 
 .menu .menu-content a {
   padding-right: 10px;
