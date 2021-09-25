@@ -1061,7 +1061,6 @@ section {
 }
 
 .menu .menu-img {
-  display: none;
   width: 70px;
   border-radius: 50%;
   float: left;
@@ -1076,7 +1075,7 @@ section {
   position: relative;
 }
 
-.menu .menu-content::after {
+/* .menu .menu-content::after {
   content: "......................................................................"
  "...................................................................."
  "....................................................................";
@@ -1087,7 +1086,7 @@ section {
   z-index: 1;
   color: #bab3a6;
   font-family: 'Red Hat Display', serif;
-}
+} */
 
 .menu .menu-content a {
   padding-right: 10px;
