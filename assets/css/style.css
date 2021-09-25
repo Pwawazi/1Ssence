@@ -55,6 +55,76 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'DM Serif Display', serif;
 }
 
+.glow-on-hover {
+  width: 110px;
+  height: 25px;
+  font-size: 14px;
+  border: none;
+  outline: none;
+  color: #fff;
+  background: #eb4807;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+}
+
+.glow-on-hover a{
+  color: #fff;
+  text-decoration: none;
+}
+
+.glow-on-hover a:hover{
+  text-decoration: none;
+}
+
+.glow-on-hover:before {
+  content: '';
+  background: linear-gradient(45deg, #ff0000, #eb4807, #eb4807, #eb4807, #eb4807, #eb4807, #eb4807, #eb4807, #ff0000);
+  position: absolute;
+  top: -2px;
+  left:-2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing 20s linear infinite;
+  opacity: 0;
+  transition: opacity .3s ease-in-out;
+  border-radius: 10px;
+}
+
+.glow-on-hover:active {
+  color: #000
+}
+
+.glow-on-hover:active:after {
+  background: transparent;
+}
+
+.glow-on-hover:hover:before {
+  opacity: 1;
+}
+
+.glow-on-hover:after {
+  z-index: -1;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #eb4807;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+@keyframes glowing {
+  0% { background-position: 0 0; }
+  50% { background-position: 400% 0; }
+  100% { background-position: 0 0; }
+}
+
 /*--------------------------------------------------------------
 # Preloader
 --------------------------------------------------------------*/
@@ -295,6 +365,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 14px;
 }
 
+
 .navbar a i {
   font-size: 12px;
   line-height: 0;
@@ -304,6 +375,7 @@ h1, h2, h3, h4, h5, h6 {
 .navbar a:hover, .navbar .active, .navbar li:hover > a {
   color: #eb4807;
 }
+
 
 .navbar .dropdown ul {
   display: block;
@@ -472,7 +544,7 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
   height: 100vh;
   /* background: url("../img/hero-bg.jpg") top center; */
-  background: url("https://res.cloudinary.com/wawazi/image/upload/v1631880056/ssence%20website/Screenshot_20210719-134920_Instagram_aa06nl.jpg") top center;
+  background: url("https://res.cloudinary.com/wawazi/image/upload/v1631880014/ssence%20website/FB_IMG_1626690121146_e6elp4.jpg") top center;
   background-size: cover;
   position: relative;
   padding: 0;
