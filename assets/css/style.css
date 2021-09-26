@@ -1120,6 +1120,38 @@ section {
   color: rgba(255, 255, 255, 0.5);
 }
 
+@media (max-width: 992px) {
+  .menu .menu-content {
+    margin-left: 35px;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+  }
+  
+  }
+
+@media (max-height: 500px) {
+  .menu .menu-content {
+    margin-left: 25px;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+  }
+  
+  }
+
+@media (max-width: 768px) {
+  .menu .menu-content {
+    margin-left: 15px;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+  }
+  
+}
 /*--------------------------------------------------------------
 # Specials
 --------------------------------------------------------------*/
