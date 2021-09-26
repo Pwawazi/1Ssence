@@ -1128,6 +1128,14 @@ section {
     justify-content: space-between;
     position: relative;
   }
+
+  .menu .menu-ingredients {
+    margin-left: 35px;
+    font-style: italic;
+    font-size: 14px;
+    font-family: 'Red Hat Display', serif;
+    color: rgba(255, 255, 255, 0.5);
+  }
   
   }
 
@@ -1139,6 +1147,14 @@ section {
     justify-content: space-between;
     position: relative;
   }
+
+  .menu .menu-ingredients {
+    margin-left: 25px;
+    font-style: italic;
+    font-size: 14px;
+    font-family: 'Red Hat Display', serif;
+    color: rgba(255, 255, 255, 0.5);
+  }
   
   }
 
@@ -1149,6 +1165,14 @@ section {
     display: flex;
     justify-content: space-between;
     position: relative;
+  }
+
+  .menu .menu-ingredients {
+    margin-left: 15px;
+    font-style: italic;
+    font-size: 14px;
+    font-family: 'Red Hat Display', serif;
+    color: rgba(255, 255, 255, 0.5);
   }
   
 }
