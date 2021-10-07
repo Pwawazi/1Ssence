@@ -186,6 +186,7 @@
 
       on('click', '#menu-flters li', function(e) {
         e.preventDefault();
+        document.getElementById("test").style.backgroundImage = 'none'; 
         menuFilters.forEach(function(el) {
           el.classList.remove('filter-active');
         });
@@ -194,9 +195,30 @@
         menuIsotope.arrange({
           filter: this.getAttribute('data-filter')
         });
+
+        // let t = this.getAttribute('data-filter')
+        // console.log(t)
+        // if(t == '.filter-breakfast')
+        //   {
+        //     document.getElementById("test").style.transition = "all 1s"
+        //     document.getElementById("test").style.alignItems = "center";
+        //     document.getElementById("test").style.justifyContent = "center";
+        //     document.getElementById("test").style.height= "350px"
+        //     // document.getElementById("test").style.backgroundRepeat = "no-repeat"
+        //     document.getElementById("test").style.background= "url('assets/img/menu/lobster-bisque.jpg') center center no-repeat";
+            
+        //   }
+
+        // if(t == '.filter-hot-drinks')
+        // {
+        //   document.getElementById("test").style.backgroundImage = "url('assets/img/Website photos/black coffee.jpg')"; 
+        // }
+
         menuIsotope.on('arrangeComplete', function() {
           AOS.refresh()
         });
+
+        t = '';
       }, true);
     }
 

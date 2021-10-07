@@ -333,6 +333,8 @@ h1, h2, h3, h4, h5, h6 {
 
 #header .logo img {
   max-height: 50px;
+  margin: 0;
+  padding: 0;
 }
 
 /*--------------------------------------------------------------
@@ -951,7 +953,7 @@ section {
 }
 
 .about .content p {
-  font-size: 16px;
+  font-size: 18px;
   padding-right: 18px;
   margin-right: 18px;
 }
@@ -1074,24 +1076,25 @@ section {
   display: flex;
   justify-content: space-between;
   position: relative;
+  /* background: #1a1814; */
 }
 
-.menu .menu-content::after {
+/* .menu .menu-content::after {
   content: "......................................................................"
  "...................................................................."
  "....................................................................";
   position: absolute;
-  left: 20px;
+  left: 50px;
   right: 0;
   top: -4px;
   z-index: 1;
   color: #bab3a6;
   font-family: 'Red Hat Display', serif;
-}
+} */
 
 .menu .menu-content a {
   padding-right: 10px;
-  background: #1a1814;
+  /* background: #1a1814; */
   position: relative;
   z-index: 3;
   font-weight: 700;
@@ -1104,12 +1107,13 @@ section {
 }
 
 .menu .menu-content span {
-  background: #1a1814;
+  /* background: #1a1814; */
   position: relative;
   z-index: 3;
   padding: 0 10px;
   font-weight: 600;
   color: #eb4807;
+  display: none;
 }
 
 .menu .menu-ingredients {
@@ -1118,6 +1122,7 @@ section {
   font-size: 14px;
   font-family: 'Red Hat Display', serif;
   color: rgba(255, 255, 255, 0.5);
+  /* background: #1a1814; */
 }
 
 @media (max-width: 992px) {
@@ -1244,7 +1249,7 @@ section {
 --------------------------------------------------------------*/
 .events {
   /* background: url(../img/events-bg.jpg) center center no-repeat; */
-  background: url("https://res.cloudinary.com/wawazi/image/upload/v1631880013/ssence%20website/FB_IMG_1626690012420_l07ek7.jpg") center center no-repeat;
+  background: url("../img/Website photos/Screenshot_20210726-125625_Chrome.jpg") center center no-repeat;
   background-size: cover;
   position: relative;
 }
