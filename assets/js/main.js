@@ -184,13 +184,33 @@
 
       let menuFilters = select('#menu-flters li', true);
 
+      // on('load', '#menu-flters li', ()=> {
+      //   menuFilters.forEach(function(el) {
+      //     el.classList.remove('filter-active');
+            // bre = el.attributes[0]
+      //   });
+      //   this.classList.add('filter-active');
+
+      //   menuIsotope.arrange({
+      //     filter: this.getAttribute('data-filter')
+      //   });
+
+      //   menuIsotope.on('arrangeComplete', function() {
+      //     AOS.refresh()
+      //   });
+      // })
+
+
       on('click', '#menu-flters li', function(e) {
         e.preventDefault();
         document.getElementById("test").style.backgroundImage = 'none'; 
         menuFilters.forEach(function(el) {
           el.classList.remove('filter-active');
+        console.log(el.attributes[0]['data-filter'])
         });
         this.classList.add('filter-active');
+        // console.log(this.classList.value)
+        // console.log(this)
 
         menuIsotope.arrange({
           filter: this.getAttribute('data-filter')
@@ -218,7 +238,7 @@
           AOS.refresh()
         });
 
-        t = '';
+        // t = '';
       }, true);
     }
 
