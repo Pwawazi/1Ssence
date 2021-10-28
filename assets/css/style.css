@@ -1028,6 +1028,16 @@ section {
 /*--------------------------------------------------------------
 # Menu Section
 --------------------------------------------------------------*/
+.menu h3 {
+  color: #fc6a03;
+}
+.menu u {
+  color: #eb4807;
+}
+.menu li {
+  list-style: none;
+  color: #fffdfdf5;
+}
 .menu #menu-flters {
   padding: 0;
   margin: 0 auto 0 auto;
@@ -1098,7 +1108,7 @@ section {
   position: relative;
   z-index: 3;
   font-weight: 700;
-  color: white;
+  color: #fc6a03;
   transition: 0.3s;
 }
 
@@ -1120,8 +1130,11 @@ section {
   margin-left: 85px;
   font-style: italic;
   font-size: 14px;
+  font-weight: 700;
   font-family: 'Red Hat Display', serif;
-  color: rgba(255, 255, 255, 0.5);
+  color: #7c7c7c;
+  /* color: #6b6a68; */
+  /* color: rgba(255, 255, 255, 0.5); */
   /* background: #1a1814; */
 }
 
